@@ -145,7 +145,7 @@ FILE* createfile(char* nombreArchivo){
 FILE* open_closeFile(char s,FILE** archivo,char* nombreArchivo){
 
     if(s == 'O'){
-        //Abrimos el archivo, si no existe , entonces lo creamos con el modo "w"
+        //Abrimos el archivo, si no existe , entonces lo creamos con el modo "a+"
         if( (*archivo = fopen(nombreArchivo,"a+")) == NULL)
             cout<<"No fue posible abrir/crear el archivo"<<endl;
     }else{
